@@ -95,6 +95,40 @@ background-color: var(--primary);
 background-color: var(--primary);
 color: var(--dark);
 }
+.mobile-nav{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: var(--dark);
+  padding-top: 120px;
+  transition: 0.4s;
+}
+.mobile-nav.is-active{
+  left: 0;
+}
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 12px 16px;
+  background-color: var(--light);
+  font-weight: 600;
+
+
+}
+.mobile-nav a:hover{
+  background-color: var(--light);
+  opacity: .5;
+
+}
 body{
   background-image: url("../public/logo512.png");
   background-repeat: no-repeat;
@@ -128,6 +162,22 @@ body{
   font-weight: bold;
   
 }
+.skill-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
+  border-radius: 20px;
+  
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+  box-sizing: border-box;
+  margin: 2em;
+  color: black;
+  height: 20%;
+  background-color: rgba(36,146,147, .1);
+
+}
 
 @media only screen and (max-width: 600px) {
 body{
@@ -136,6 +186,9 @@ body{
 }
 @media (min-width: 768px) {
   .hamburger {
+    display: none;
+  }
+  .mobile-nav{
     display: none;
   }
   .menu {
