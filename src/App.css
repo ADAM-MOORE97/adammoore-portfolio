@@ -90,10 +90,12 @@ background-color: var(--primary);
   transition: 0.4s;
   padding: 8px 16px;
   border-radius: 99px;
+ 
 }
 .menu a.is-active, .menu a:hover{
 background-color: var(--primary);
 color: var(--dark);
+
 }
 .mobile-nav{
   position: fixed;
@@ -115,6 +117,7 @@ color: var(--dark);
   width: 100%;
   max-width: 200px;
   margin: 0 auto 16px;
+  justify-content: center;
   text-align: center;
   color: var(--dark);
   text-decoration: none;
@@ -178,10 +181,20 @@ body{
   background-color: rgba(36,146,147, .1);
 
 }
+.skill-icons i{
+display: inline-block;
+font-size: 20pt;
+
+margin-left: 2em;
+}
 
 @media only screen and (max-width: 600px) {
 body{
   background-size: contain;
+}
+.skill-container i{
+  font-size: 16pt;
+  margin-left: .5em;
 }
 }
 @media (min-width: 768px) {
@@ -194,4 +207,5 @@ body{
   .menu {
     display: flex;
   }
+ 
 }

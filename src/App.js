@@ -33,8 +33,8 @@ function App() {
       
       <div className='mobile-nav'>
       <a href='#' className='is-active'><i className='nav-item-glyph glyph-devto'></i>Portfolio</a>
-          <a href='#'>Github</a>
-          <a href='#'>Blog</a>
+          <a href='#'>Github </a>
+          <a href='#'>Blog </a>
           <a href='#'>LinkedIn</a>
       </div>
       <div className='intro-container'>
@@ -52,7 +52,18 @@ function App() {
      
       </div>
       <div className='skill-container'>
-          <h2>Code Stack</h2>
+          <h2>Developer Skills</h2>
+          <div className='skill-icons'>
+          <i class="fa-solid fa-gem icon"></i>
+          <i class="fa-brands fa-react icon"></i>
+          <i class="fa-brands fa-js icon"></i>
+          <i class="fa-brands fa-css3-alt icon"></i>
+          <i class="fa-solid fa-code icon"></i>
+          <i class="fa-brands fa-shopify icon"></i>
+          <i class="fa-brands fa-google icon"></i>
+          <i class="fa-brands fa-stack-overflow icon"></i>
+          </div>
+         
       </div>
     </div>
   );
