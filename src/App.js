@@ -3,9 +3,31 @@ import React from 'react';
 import './App.css';
 
 function App() {
+
+  const toggleHamburger = (e) =>{
+   const hamburger = document.querySelector('.hamburger')
+   hamburger.classList.toggle('is-active')
+  }
+
   return (
     <div className="App">
-      <div className='d-flex flex-md-column flex-row flex-shrink-0 bg-light navigation align-items-center'></div>
+      <nav>
+        <div className='container'>
+          {/* <img src='../logo64.png'/> */}
+        <h1>Adam Moore </h1>
+        <div className='menu'>
+          <a href='#' className='is-active'>Portfolio</a>
+          <a href='#'>Github</a>
+          <a href='#'>Blog</a>
+          <a href='#'>LinkedIn</a>
+        </div>
+        <button className='hamburger' onClick={(e) =>toggleHamburger(e)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </nav>
       <div className='intro-container'>
         <div id="name">
         <h1>Adam Moore</h1>
